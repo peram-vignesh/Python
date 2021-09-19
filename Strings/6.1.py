@@ -1,5 +1,6 @@
 string=input('Enter the string: ')
 count=0
+count1=0
 while count<len(string):
     letter=string[count]
     if letter == ":" :
@@ -10,8 +11,7 @@ length=len(string)
 count=count+1
 cut=string[count:length]
 if cut.isnumeric()== True :
-    cut=float(cut)
-        
+    cut=int(cut)
 else:
     cut='you entered a string after colon'
 
